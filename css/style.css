@@ -1,0 +1,5 @@
+@import url(./game.css);
+@import url(./variables.css);
+ body{
+    background-color: black;
+ }

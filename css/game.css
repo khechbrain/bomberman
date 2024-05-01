@@ -1,0 +1,30 @@
+.game-container {
+    background-color: rgb(68, 65, 65);
+    margin: auto;
+
+    & * {
+        position: absolute;
+    }
+    & .game-player{
+        background-color: red;
+        background: url(../img/player.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        transition: var(--moving-transition);
+        z-index: 2;
+    }
+    & .game-wall{
+        background-color: green;
+        background: url(../img/brick.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: var(--moving-transition);
+    }
+    & .game-bombe{
+        background-color: green;
+        background: url(../img/bomb.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: var(--moving-transition);
+    }
+}
